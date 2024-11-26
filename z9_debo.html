@@ -1,0 +1,25 @@
+<!DOCTYPE html> 
+ <head>
+ <script type="text/javascript"> 
+   document.write("Zastosowanie:".fontcolor("green").fontsize(6)+"<br>");
+   document.write("Jest używany kiedy użytkownik ma wpisać coś np. zanim wejdzie w dany moduł strony. Np. hasło.".fontcolor("green").fontsize(5)+"<br>");
+   document.write("Użytkownik po wpisaniu wartość może nacisnął „OK.” albo „Cancel” Jeżeli użytkownik kliknie „OK.” ".fontcolor("green").fontsize(5)+"<br>");
+   document.write("metoda zwraca wpisaną wartość, a w przeciwnym wypadku zwraca null.".fontcolor("green").fontsize(5)+"<br>");
+ function show_prompt() 
+ { 
+ var name=prompt("Napisz imię","Imię Nazwisko"); 
+
+ if (name!=null && name!="") 
+ { 
+ document.write("Cześć " + name + "! Świetnie wyglądasz!"); 
+ } 
+
+ } 
+ </script> 
+</head> 
+<body bgcolor="yellow"> 
+
+ <input type="button" onclick="show_prompt()" value="Pokaż prompt box" /> 
+
+ </body> 
+</html>
