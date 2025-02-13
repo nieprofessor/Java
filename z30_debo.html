@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teoria Programowania</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            font-size: 2em;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+        button {
+            margin: 10px;
+            padding: 10px;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+   
+    
+    <button onclick="pokazZadanie()">Zadanie</button>
+    <button onclick="pokazKod()">KOD</button>
+
+    <div id="zadanie" style="display: none;">
+        <h2>Zadanie dla nr dziennika 5</h2>
+        <p>Utwórz obiekt <strong>Wazon</strong> z trzema właściwościami oraz metodą wyświetlającą jego dane.</p>
+    </div>
+
+    <div id="kod" style="display: none;">
+        <h2>Kod programu</h2>
+        <pre><code>
+        function Wazon(kolor, material, wysokosc) {
+            this.kolor = kolor;
+            this.material = material;
+            this.wysokosc = wysokosc;
+            this.wazon_wyswietl_Nazwisko = function() {
+                console.log("Obiekt: Wazon");
+                console.log("Kolor: " + this.kolor);
+                console.log("Materiał: " + this.material);
+                console.log("Wysokość: " + this.wysokosc + " cm");
+            }
+        }
+
+        let mojWazon = new Wazon("niebieski", "ceramika", 30);
+        mojWazon.wazon_wyswietl_Nazwisko();
+        </code></pre>
+    </div>
+
+    <script>
+        function pokazZadanie() {
+            document.getElementById('zadanie').style.display = 'block';
+            document.getElementById('kod').style.display = 'none';
+        }
+        
+        function pokazKod() {
+            document.getElementById('zadanie').style.display = 'none';
+            document.getElementById('kod').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
