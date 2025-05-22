@@ -6,7 +6,7 @@
         <div style="color:red;font-size:50px;"> 
             <script language="JavaScript"> 
         var x_deb=prompt("podaj liczbę x=",""); 
-        var a_deb=parseFloat(x_deb; 
+        var a_deb=parseFloat(x_deb); 
         document.write("czytana liczba x="+a_deb+"<br>");     
             if(a_deb>0) 
             {
