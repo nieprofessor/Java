@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Prostokąt z gwiazdek</title>
+    <style>
+        body {
+            font-family: monospace;
+            white-space: pre;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let dl_nazwiska = 8;
+        let dl_imienia = 6;  
+
+        let a_deb = (dl_nazwiska % 4) + 5; 
+        let b_deb = (dl_imienia % 6) + 20; 
+
+        for (let i = 0; i < b_deb; i++) {
+            document.write("*");
+        }
+        document.write("<br>");
+
+        for (let i = 0; i < a_deb - 2; i++) {
+            document.write("*");
+            for (let j = 0; j < b_deb - 2; j++) {
+                document.write("&nbsp;");
+            }
+            document.write("*<br>");
+        }
+
+        for (let i = 0; i < b_deb; i++) {
+            document.write("*");
+        }
+    </script>
+</body>
+</html>
