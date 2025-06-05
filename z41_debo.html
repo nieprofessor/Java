@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Rodzaje pętli w JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+        .petla {
+            background: white;
+            border-left: 6px solid #007acc;
+            margin-bottom: 30px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #007acc;
+        }
+        code {
+            background-color: #eee;
+            padding: 2px 6px;
+            border-radius: 4px;
+            display: block;
+            margin-top: 10px;
+            white-space: pre;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Rodzaje pętli w JavaScript</h1>
+
+    <div class="petla">
+        <h2>Pętla <code>for</code></h2>
+        <strong>Konstrukcja:</strong>
+        <code>
+for (inicjalizacja; warunek; zmiana) {
+}
+        </code>
+        <strong>Opis:</strong>
+        <p>Pętla <code>for</code> jest używana, gdy z góry znamy liczbę powtórzeń. W każdej iteracji wykonuje się blok kodu, a po nim następuje aktualizacja zmiennej sterującej.</p>
+        <strong>Schemat blokowy:</strong><br>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/C_for_loop.svg/500px-C_for_loop.svg.png" alt="Schemat blokowy pętli for">
+    </div>
+
+    <div class="petla">
+        <h2>Pętla <code>while</code> (kontrolowane wejście)</h2>
+        <strong>Konstrukcja:</strong>
+        <code>
+while (warunek) {
+}
+        </code>
+        <strong>Opis:</strong>
+        <p>Pętla <code>while</code> sprawdza warunek przed każdą iteracją. Jeśli warunek jest prawdziwy, wykonywany jest kod wewnątrz pętli. Może nie wykonać się ani razu, jeśli warunek jest od początku fałszywy.</p>
+        <strong>Schemat blokowy:</strong><br>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/While-loop-diagram.svg/500px-While-loop-diagram.svg.png" alt="Schemat blokowy pętli while">
+    </div>
+
+    <div class="petla">
+        <h2>Pętla <code>do...while</code> (kontrolowane wyjście)</h2>
+        <strong>Konstrukcja:</strong>
+        <code>
+do {
+} while (warunek);
+        </code>
+        <strong>Opis:</strong>
+        <p>Pętla <code>do...while</code> wykona się co najmniej raz, ponieważ warunek jest sprawdzany po wykonaniu bloku kodu. Jest to tzw. pętla z kontrolą u dołu.</p>
+        <strong>Schemat blokowy:</strong><br>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Do-while-loop-diagram.svg/500px-Do-while-loop-diagram.svg.png" alt="Schemat blokowy pętli do while">
+    </div>
+
+</body>
+</html>
