@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Pętla imię-nazwisko</title>
+</head>
+<body>
+
+  <h2>Pętla for – Imię i nazwisko na przemian</h2>
+
+  <div id="wynik"></div>
+
+  <script>
+    let deb_naz = "Dębowski";
+    let deb_imi = "Szymon";
+    let deb_len = deb_naz.length;
+    let ile_razy_wyswietlic = (deb_len % 4) + 10;
+    let wielkosc_liter = (deb_len % 3) + 40;
+
+    document.getElementById("wynik").innerHTML +=
+      "<p>Ilość wykonania pętli = <b>" + ile_razy_wyswietlic +
+      "</b><br>Wielkość liter = <b>" + wielkosc_liter + "px</b></p>";
+
+    for (let i_deb = 1; i_deb <= ile_razy_wyswietlic; i_deb++) {
+      if (i_deb % 2 === 0) {
+        document.getElementById("wynik").innerHTML +=
+          "<p style='font-size:" + wielkosc_liter + "px'>" + deb_imi + "</p>";
+      } else {
+        document.getElementById("wynik").innerHTML +=
+          "<p style='font-size:" + wielkosc_liter + "px'>" + deb_naz + "</p>";
+      }
+    }
+  </script>
+
+</body>
