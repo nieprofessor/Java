@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Sprawdzenie danych Dębowski</title>
+</head>
+<body>
+<div style="color:red; font-size:30px;">
+    <script>
+        let a_deb, b_deb, c_deb;
+        let poprawne = false;
+
+        do {
+            a_deb = parseFloat(prompt("Podaj bok a:", ""));
+            b_deb = parseFloat(prompt("Podaj bok b:", ""));
+            c_deb = parseFloat(prompt("Podaj bok c:", ""));
+
+            if (
+                a_deb > 0 && b_deb > 0 && c_deb > 0 &&
+                a_deb + b_deb > c_deb &&
+                a_deb + c_deb > b_deb &&
+                b_deb + c_deb > a_deb
+            ) {
+                poprawne = true;
+                document.write("Z podanych boków można zbudować trójkąt.");
+            } else {
+                alert("Błędne dane! Podaj trzy poprawne długości boków.");
+            }
+        } while (!poprawne);
+    </script>
+</div>
+</body>
+</html>
